@@ -1,1 +1,3 @@
-<p>multi-buttons-loading works!</p>
+<button (click)="fetchData('button1')" [disabled]="getLoadingState('button1') | async">Button 1</button>
+<button (click)="fetchData('button2')" [disabled]="getLoadingState('button2') | async">Button 2</button>
+<button (click)="fetchData('button3')" [disabled]="getLoadingState('button3') | async">Button 3</button>
