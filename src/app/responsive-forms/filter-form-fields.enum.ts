@@ -1,0 +1,5 @@
+export enum FILTER_FORM_ENUM {
+  NAME = 'NAME',
+  AGE = 'AGE',
+  FAVORITE_DATE = 'FAVORITE_DATE',
+}

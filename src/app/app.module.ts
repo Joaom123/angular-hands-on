@@ -5,18 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MultiButtonsLoadingComponent } from './multi-buttons-loading/multi-buttons-loading.component';
 import { ResponsiveFormsComponent } from './responsive-forms/responsive-forms.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ReusableFilterFormComponent } from './responsive-forms/reusable-filter-form/reusable-filter-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MultiButtonsLoadingComponent,
-    ResponsiveFormsComponent
+    ResponsiveFormsComponent,
+    ReusableFilterFormComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
